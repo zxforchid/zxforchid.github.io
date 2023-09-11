@@ -27,10 +27,15 @@
 	.h4{
 	font-family:&quot;font-weight:500;color:#333333;background-color:#FFFFFF;font-size:16px !important;}
 		 
+	.box{ width:600px; display:-moz-box; display:-o-box;display:-webkit-box; display:-ms-flexbox; display:box; }
+    	.box li{ -moz-box-flex:1; -webkit-box-flex:1; -ms-flex:1; -o-box-flex:1; box-flex:1; height:50px; color:#fff; }
+   	 .box li.a{ background:#993;  }
+    	 .box li.b{ background:#399;  }
+   	 .box li.c{ background:#939;  }
 
 
 		
-		.dahezi_img_left{		/* 第二个盒子, */
+		/*.dahezi_img_left{		/* 第二个盒子, */
 			float: left; 		/* 要左浮动 */
 			margin-right: 40px; /* 为了让图片和文字不贴着,右外边距定义40px */
 			}
@@ -44,7 +49,7 @@
 		 img{
 			width: 200px;		/* 标签样式 让图片宽度500px, */
 			height: auto;		/* 高度自动 随它去吧 */
-			}
+			}*/
     
 </style>
 
@@ -66,19 +71,19 @@
                 </div>
             </div>
         </div>
-       <div class="dahezhi"> 
-	<div class="dahezi_img_left">       
+       <div class="box"> 
+	<li class="a">      
         	<div class="box-bg">
            	 	<img src="https://q-bigbig.github.io/qiao.png" alt="" />
         	</div>
        		<div class="box-text">
             		&nbsp; &nbsp;&nbsp;<a href="http://q-bigbig.github.io/index.html" style="font-weight:400;">● 杭州电子科技大学 乔通</a>
-
-        	</div>
+		</div>
+        </li> 
 			    			    
-	</div>
+	
 
-	<div class="dahezi_txt_right"> 
+	<li class="b"> 
         	<div class="box-bg">
            	 	<img src="images/liuzhi.png" alt="" />
         	</div>
@@ -87,7 +92,7 @@
 
         	</div>
 			    
-	</div>
+	</li>
 			    
     	
 	</div>
