@@ -30,9 +30,14 @@
 
 
 		
-	.conf {  width: 100%;  overflow: hidden;}
-	.left {  float: left;  width: 200px;  background-color: #f1f1f1;}
-	.right {  margin-left: 200px;  background-color: #e1e1e1;}
+		.dahezi_img_left{		/* 第二个盒子, */
+			float: left; 		/* 要左浮动 */
+			margin-right: 40px; /* 为了让图片和文字不贴着,右外边距定义40px */
+			}
+		.dahezi_txt_right{		/* 定义第三盒子 */
+			font-size: 15px;  	/* 设置字体大小 */
+			line-height: 1.6;	/* 设置行距 */
+		}
     
 </style>
 
@@ -54,8 +59,8 @@
                 </div>
             </div>
         </div>
-        <div class="conf">
-	<div class="left">       
+       
+	<div class="dahezi_img_left">       
 		<div class="box_1 ">
         	<div class="box-bg">
            	 	<img src="https://q-bigbig.github.io/qiao.png" alt="" />
@@ -68,7 +73,7 @@
 			    			    
 	</div>
 
-	<div class="right"> 
+	<div class="dahezi_txt_right"> 
 	<div class="box_1 ">
         <div class="box-bg">
             <img src="images/liuzhi.png" alt="" />
@@ -83,7 +88,7 @@
 			    
     	
 	</div>
-        </div>
+     
     </div>
 
 
