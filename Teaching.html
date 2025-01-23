@@ -20,6 +20,7 @@
         ul {
             list-style-type: none; /* 移除默认的圆点符号 */
             padding-left: 0; /* 移除左侧内边距 */
+            counter-reset: list-item; /* 初始化编号 */
         }
         ul li {
             position: relative; /* 设置li项相对定位 */
@@ -31,9 +32,6 @@
             position: absolute; /* 绝对定位 */
             left: 0; /* 编号显示在li项的最左侧 */
             color: black; /* 编号颜色 */
-        }
-        ul {
-            counter-reset: list-item; /* 初始化编号 */
         }
     </style>
 </head>
