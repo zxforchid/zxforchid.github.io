@@ -14,7 +14,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>星型符号列表</title>
+    <title>编号列表</title>
     <style>
         /* 修改无序列表的符号 */
         ul {
@@ -23,13 +23,17 @@
         }
         ul li {
             position: relative; /* 设置li项相对定位 */
-            padding-left: 20px; /* 给li项左侧添加空间以显示星型符号 */
+            padding-left: 30px; /* 给li项左侧添加空间以显示编号 */
         }
         ul li::before {
-            content: "◮"; /* 设置星形符号 */
+            content: "(" counter(list-item) ")"; /* 设置编号格式 (1), (2), (3) */
+            counter-increment: list-item; /* 自动递增编号 */
             position: absolute; /* 绝对定位 */
-            left: 0; /* 星型符号在li项的最左侧 */
-	    transform: rotate(90deg);
+            left: 0; /* 编号显示在li项的最左侧 */
+            color: black; /* 编号颜色 */
+        }
+        ul {
+            counter-reset: list-item; /* 初始化编号 */
         }
     </style>
 </head>
