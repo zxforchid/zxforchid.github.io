@@ -26,7 +26,6 @@
         }
         ol li::before {
             content: "(" counter(list-item) ")"; /* 设置编号格式 (1), (2), (3) */
-            counter-increment: list-item; /* 自动递增编号 */
             position: absolute; /* 绝对定位 */
             left: 0; /* 编号显示在li项的最左侧 */
             color: black; /* 编号颜色 */
