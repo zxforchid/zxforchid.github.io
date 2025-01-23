@@ -16,17 +16,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>编号列表</title>
     <style>
-        /* 修改无序列表的符号 */
-        ul {
-            list-style-type: none; /* 移除默认的圆点符号 */
+        ol {
+            list-style-type: none; /* 移除默认的数字符号 */
             padding-left: 0; /* 移除左侧内边距 */
-            counter-reset: list-item; /* 初始化编号 */
         }
-        ul li {
+        ol li {
             position: relative; /* 设置li项相对定位 */
             padding-left: 30px; /* 给li项左侧添加空间以显示编号 */
         }
-        ul li::before {
+        ol li::before {
             content: "(" counter(list-item) ")"; /* 设置编号格式 (1), (2), (3) */
             counter-increment: list-item; /* 自动递增编号 */
             position: absolute; /* 绝对定位 */
@@ -87,7 +85,7 @@
             <div class="col-sm-12">
                 <div class="panel panel-body" style="border-bottom-style: none;">
 		<h4 id="h4--"><span class="header-link octicon octicon-link"></span></h4><p><b>教学介绍（主讲课程、获奖荣誉、教学项目等）：</b>，</p>
-    <ul>
+    <ol>
         <li>主讲《深度学习》、《信号分析与处理》、《深度学习课程设计》等课程</li>
         <li>主持“华为-智能基座”教育部产学合作协同育人项目1项</li>
         <li>获第十二届蓝桥杯全国总决赛“优秀指导教师”</li>
@@ -102,7 +100,7 @@
         <li>参与并获得2024年浙江省自动化学会高等教育教学成果奖二等奖1项</li>
         <li>参与并获得2023年校级教学成果一等奖1项</li>
         <li>参与编写十四五规划教材《人工智能通识》1部</li>
-    </ul> <h4 id="h4--"></p>
+    </ol> <h4 id="h4--"></p>
 			
 	
 		</div>
